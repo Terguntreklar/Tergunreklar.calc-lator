@@ -1,0 +1,130 @@
+@import url("reset.css");
+body{
+  background-color: #121212;
+}
+*{
+  color: white;
+}
+.container {
+  cursor: default;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "output output output"
+    "numbers numbers functions"
+    "numbers numbers functions";
+  grid-area: container;
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff1f;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.output {
+  display: grid;
+  grid-area: output;
+  background-color: #ffffff06;
+  font-size: 4rem;
+  align-content: center;
+  justify-content: right;
+  border-radius: 5px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Digits Digits Digits"
+    "Digits Digits Digits"
+    "Digits Digits Digits"
+    "Zero Zero point";
+  grid-area: numbers;
+}
+
+.Zero {
+  /* display: grid; */
+  grid-area: Zero;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(163, 40, 40);
+  border-radius: 5px;
+}
+
+.Digits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: Digits;
+  justify-items: center;
+  align-items: center;
+  margin: 5px 0px;
+  gap: 10px 10px;
+  border-radius: 5px;
+}
+
+.point {
+  display: grid;
+  grid-area: point;
+  justify-items: center;
+  align-items: center;
+}
+
+.functions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+  gap: 10px 10px;
+  margin: 5px 0px 5px 5px;
+  grid-area: functions;
+  justify-items: center;
+  align-items: center;
+}
+.functions div{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  background-color: #ff73007a;
+
+}
+.number{
+  background-color: rgb(108, 108, 108);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+}
+.Zero .number{
+  background-color: unset;
+}
+.functions div{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
