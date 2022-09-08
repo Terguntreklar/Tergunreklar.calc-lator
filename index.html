@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="output">0</div>
+        <div class="numbers">
+            <div class="Zero">
+            <div class="number" data-key="0">0</div>
+            </div>
+            <div class="Digits">
+                <div class="number" data-key="1">1</div>
+                <div class="number" data-key="2">2</div>
+                <div class="number" data-key="3">3</div>
+                <div class="number" data-key="4">4</div>
+                <div class="number" data-key="5">5</div>
+                <div class="number" data-key="6">6</div>
+                <div class="number" data-key="7">7</div>
+                <div class="number" data-key="8">8</div>
+                <div class="number" data-key="9">9</div>
+            </div>
+            <div class="point">.</div>
+        </div>
+        <div class="functions">
+            <div class="add" data-key="+" onclick="add()">+</div>
+            <div class="subtract" data-key="-" onclick="subtract()">-</div>
+            <div class="divide" data-key="/" onclick="divide()">/</div>
+            <div class="multiply" data-key="*" onclick="multiply()">*</div>
+            <div class="sqrt" onclick="squarert()">2√</div>
+            <div class="invert"onclick="invert()">+/-</div>
+            <div class="equal" data-key="=" onclick="display()">=</div>
+            <div class="clear" data-key="Backspace" onclick="clearOutput()">AC</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
